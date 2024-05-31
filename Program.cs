@@ -1,11 +1,13 @@
 ﻿using FundamentalsOfProgrammingTasks.IfElse;
+using FundamentalsOfProgrammingTasks.Loops;
+using System.Globalization;
 using System.Numerics;
 
 class Program
 {
     static void Main()
     {
-
+        //Topic if else
 
 
 
@@ -186,13 +188,39 @@ class Program
 
         //Vowel Consont
 
-        Console.WriteLine("Enter a character");
+        //Console.WriteLine("Enter a character");
 
-        char input = Console.ReadKey().KeyChar;
+        //char input = Console.ReadKey().KeyChar;
 
-        Console.WriteLine();
+        //Console.WriteLine();
 
-        CheckTheVowelConsonant.check(input);
+        //CheckTheVowelConsonant.check(input);
+
+
+
+
+
+        //Topic loops
+
+        Console.Write("Enter the range: ");
+
+        string input1 = Console.ReadLine();
+
+
+        if(double.TryParse(input1 , out double number))
+        {
+            PrintNumbers.Print(number);
+        }
+        else if(string.IsNullOrWhiteSpace(input1))
+        {
+            Console.WriteLine("Null is not allowed");
+        }
+        else
+        {
+            Console.WriteLine("Invalid Entered");
+        }
+
+       
 
 
     }
