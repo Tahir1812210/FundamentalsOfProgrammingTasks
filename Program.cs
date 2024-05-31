@@ -309,6 +309,25 @@ class Program
 
         //factorial number
 
+        //Console.Write("Enter Number: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1))
+        //{
+        //    FactorialNumber.factorial(number1);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+        //fibonacci 
+
         Console.Write("Enter Number: ");
 
         string input1 = Console.ReadLine();
@@ -319,7 +338,7 @@ class Program
         }
         else if (int.TryParse(input1, out int number1))
         {
-            FactorialNumber.factorial(number1);
+            FibonacciSeries.fibonacci(number1);
         }
         else
         {
