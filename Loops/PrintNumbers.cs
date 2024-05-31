@@ -8,7 +8,7 @@ namespace FundamentalsOfProgrammingTasks.Loops
 {
     internal class PrintNumbers
     {
-        public static void Print(double numbers)
+        public static void Print(int numbers)
         {
 
             for(int i = 1; i <= numbers; i++)

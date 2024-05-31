@@ -202,16 +202,35 @@ class Program
 
         //Topic loops
 
+        //Console.Write("Enter the range: ");
+
+        //string input1 = Console.ReadLine();
+
+
+        //if(int.TryParse(input1 , out int number))
+        //{
+        //    PrintNumbers.Print(number);
+        //}
+        //else if(string.IsNullOrWhiteSpace(input1))
+        //{
+        //    Console.WriteLine("Null is not allowed");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+
         Console.Write("Enter the range: ");
 
         string input1 = Console.ReadLine();
 
 
-        if(double.TryParse(input1 , out double number))
+        if (int.TryParse(input1, out int number))
         {
-            PrintNumbers.Print(number);
+            SumOfNNatural.sum(number);
         }
-        else if(string.IsNullOrWhiteSpace(input1))
+        else if (string.IsNullOrWhiteSpace(input1))
         {
             Console.WriteLine("Null is not allowed");
         }
@@ -219,9 +238,6 @@ class Program
         {
             Console.WriteLine("Invalid Entered");
         }
-
-       
-
 
     }
 }
