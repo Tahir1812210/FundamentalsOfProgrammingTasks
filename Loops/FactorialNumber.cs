@@ -8,6 +8,7 @@ namespace FundamentalsOfProgrammingTasks.Loops
 {
     internal class FactorialNumber
     {
+        //task done
         public static void factorial(int number)
         {
             if(number < 0)
