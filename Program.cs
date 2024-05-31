@@ -347,6 +347,25 @@ class Program
 
         //prime number
 
+        //Console.Write("Enter Number: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1))
+        //{
+        //    PrimeNumbers.prime(number1);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+        //sumofdigitsnumber
+
         Console.Write("Enter Number: ");
 
         string input1 = Console.ReadLine();
@@ -357,7 +376,7 @@ class Program
         }
         else if (int.TryParse(input1, out int number1))
         {
-            PrimeNumbers.prime(number1);
+            SumOfDigitsNumber.sum(number1);
         }
         else
         {
