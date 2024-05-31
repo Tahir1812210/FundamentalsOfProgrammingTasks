@@ -1,5 +1,6 @@
 ﻿using FundamentalsOfProgrammingTasks.IfElse;
 using FundamentalsOfProgrammingTasks.Loops;
+using System;
 using System.Globalization;
 using System.Numerics;
 
@@ -160,6 +161,7 @@ class Program
         //}
 
 
+        // bmi calculator
         //Console.Write("Enter Height in Metres: ");
         //string input1 = Console.ReadLine();
 
@@ -221,23 +223,64 @@ class Program
         //}
 
 
-        Console.Write("Enter the range: ");
+        //Console.Write("Enter the range: ");
+
+        //string input1 = Console.ReadLine();
+
+
+        //if (int.TryParse(input1, out int number))
+        //{
+        //    SumOfNNatural.sum(number);
+        //}
+        //else if (string.IsNullOrWhiteSpace(input1))
+        //{
+        //    Console.WriteLine("Null is not allowed");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+
+        // reverse the string
+        // Console.Write("Enter the word: ");
+
+        // string input1 = Console.ReadLine();
+
+
+        //if (string.IsNullOrWhiteSpace(input1))
+        // {
+        //     Console.WriteLine("Null is not allowed");
+        // }
+        // else if (int.TryParse(input1, out _) || double.TryParse(input1, out _))
+        // {
+        //     Console.WriteLine("Invalid Entered");
+
+        // }
+        // else
+        // {
+        //     ReverseString.reverse(input1);
+        // }
+
+        // count vowels in string
+
+        Console.Write("Enter Word: ");
 
         string input1 = Console.ReadLine();
 
-
-        if (int.TryParse(input1, out int number))
+        if(string.IsNullOrEmpty(input1))
         {
-            SumOfNNatural.sum(number);
+            Console.WriteLine("Null or Exception Value");
         }
-        else if (string.IsNullOrWhiteSpace(input1))
-        {
-            Console.WriteLine("Null is not allowed");
-        }
-        else
+        else if(int.TryParse(input1, out _) || double.TryParse(input1, out _))
         {
             Console.WriteLine("Invalid Entered");
         }
+        else
+        {
+           CountVowelsInString.checkVowels(input1);
+        }
+
 
     }
 }
