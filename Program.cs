@@ -328,6 +328,25 @@ class Program
 
         //fibonacci 
 
+        //Console.Write("Enter Number: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1))
+        //{
+        //    FibonacciSeries.fibonacci(number1);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+        //prime number
+
         Console.Write("Enter Number: ");
 
         string input1 = Console.ReadLine();
@@ -338,7 +357,7 @@ class Program
         }
         else if (int.TryParse(input1, out int number1))
         {
-            FibonacciSeries.fibonacci(number1);
+            PrimeNumbers.prime(number1);
         }
         else
         {
