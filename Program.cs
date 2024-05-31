@@ -366,6 +366,48 @@ class Program
 
         //sumofdigitsnumber
 
+        //Console.Write("Enter Number: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1))
+        //{
+        //    SumOfDigitsNumber.sum(number1);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+        //great common factor
+
+        //Console.Write("Enter First Number: ");
+
+        //string input1 = Console.ReadLine();
+
+        //Console.Write("Enter Second Number: ");
+
+        //string input2 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1) && int.TryParse(input2, out int number2))
+        //{
+        //    GreatCommonFactorNumber.find(number1, number2);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+        //Reverse Number
+
         Console.Write("Enter Number: ");
 
         string input1 = Console.ReadLine();
@@ -376,7 +418,7 @@ class Program
         }
         else if (int.TryParse(input1, out int number1))
         {
-            SumOfDigitsNumber.sum(number1);
+            ReverseNumber.reversed(number1);
         }
         else
         {
