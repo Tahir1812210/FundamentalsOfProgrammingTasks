@@ -264,23 +264,67 @@ class Program
 
         // count vowels in string
 
-        Console.Write("Enter Word: ");
+        //Console.Write("Enter Word: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if(string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if(int.TryParse(input1, out _) || double.TryParse(input1, out _))
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+        //else
+        //{
+        //   CountVowelsInString.checkVowels(input1);
+        //}
+
+
+        //multiplication table
+
+        //Console.Write("Enter Number: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1)  )
+        //{
+        //    MultiplicationTable.multiply(number1);
+        //}
+        //else if(double.TryParse(input1, out double number2))
+        //{
+        //    MultiplicationTable.multiply(number2);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+
+
+        //factorial number
+
+        Console.Write("Enter Number: ");
 
         string input1 = Console.ReadLine();
 
-        if(string.IsNullOrEmpty(input1))
+        if (string.IsNullOrEmpty(input1))
         {
             Console.WriteLine("Null or Exception Value");
         }
-        else if(int.TryParse(input1, out _) || double.TryParse(input1, out _))
+        else if (int.TryParse(input1, out int number1))
         {
-            Console.WriteLine("Invalid Entered");
+            FactorialNumber.factorial(number1);
         }
         else
         {
-           CountVowelsInString.checkVowels(input1);
+            Console.WriteLine("Invalid Entered");
         }
-
 
     }
 }
