@@ -408,6 +408,27 @@ class Program
 
         //Reverse Number
 
+        //Console.Write("Enter Number: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1))
+        //{
+        //    ReverseNumber.reversed(number1);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+
+
+        //Pallindrome 
+
         Console.Write("Enter Number: ");
 
         string input1 = Console.ReadLine();
@@ -418,7 +439,7 @@ class Program
         }
         else if (int.TryParse(input1, out int number1))
         {
-            ReverseNumber.reversed(number1);
+            PallindromeNumber.pallindrome(number1);
         }
         else
         {
