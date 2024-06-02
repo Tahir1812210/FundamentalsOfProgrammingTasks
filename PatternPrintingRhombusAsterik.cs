@@ -15,6 +15,7 @@ namespace FundamentalsOfProgrammingTasks
             if(size < 0)
             {
                 Console.WriteLine("Size cannot be negative, it should be positive");
+                return;
             }
 
             for(int i =1; i <= size; i++)
