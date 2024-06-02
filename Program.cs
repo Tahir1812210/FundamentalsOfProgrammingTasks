@@ -1,4 +1,5 @@
-﻿using FundamentalsOfProgrammingTasks.IfElse;
+﻿using FundamentalsOfProgrammingTasks;
+using FundamentalsOfProgrammingTasks.IfElse;
 using FundamentalsOfProgrammingTasks.Loops;
 using System;
 using System.Globalization;
@@ -449,7 +450,28 @@ class Program
 
         //Amstrong Number
 
-        Console.Write("Enter Number: ");
+        //Console.Write("Enter Number: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1))
+        //{
+        //    AmstrongNumber.checkAmstrong(number1);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+
+        //Pattern Printing
+
+
+        Console.Write("Enter Size: ");
 
         string input1 = Console.ReadLine();
 
@@ -459,11 +481,14 @@ class Program
         }
         else if (int.TryParse(input1, out int number1))
         {
-            AmstrongNumber.checkAmstrong(number1);
+            PatternPrintingRhombusAsterik.print(number1);
         }
         else
         {
             Console.WriteLine("Invalid Entered");
         }
+
+        
+
     }
 }
