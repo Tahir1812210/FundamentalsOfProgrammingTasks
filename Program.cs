@@ -1,6 +1,7 @@
 ﻿using FundamentalsOfProgrammingTasks;
 using FundamentalsOfProgrammingTasks.IfElse;
 using FundamentalsOfProgrammingTasks.Loops;
+using FundamentalsOfProgrammingTasks.Strings;
 using System;
 using System.Globalization;
 using System.Numerics;
@@ -471,7 +472,24 @@ class Program
         //Pattern Printing
 
 
-        Console.Write("Enter Size: ");
+        //Console.Write("Enter Size: ");
+
+        //string input1 = Console.ReadLine();
+
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out int number1))
+        //{
+        //    PatternPrintingRhombusAsterik.print(number1);
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+
+        Console.Write("Enter Name: ");
 
         string input1 = Console.ReadLine();
 
@@ -479,16 +497,15 @@ class Program
         {
             Console.WriteLine("Null or Exception Value");
         }
-        else if (int.TryParse(input1, out int number1))
-        {
-            PatternPrintingRhombusAsterik.print(number1);
-        }
-        else
+        else if (int.TryParse(input1, out _) || double.TryParse(input1, out _))
         {
             Console.WriteLine("Invalid Entered");
         }
-
-        
+        else
+        {
+            
+            QoutationAfterEveryName.Add(input1);
+        }
 
     }
 }
