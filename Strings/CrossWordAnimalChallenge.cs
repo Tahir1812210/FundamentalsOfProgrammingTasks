@@ -24,8 +24,49 @@ namespace FundamentalsOfProgrammingTasks.Strings
                 }
 
                 
+
+                
+                
             }
             return false;
+        }
+
+        public static void FindAnimals(char[,] grids)
+        {
+            int rows = grids.GetLength(0);
+
+            int cols = grids.GetLength(1);
+
+
+            for(int r = 0; r < rows; r++)
+            {
+                string rowWord = "";
+
+                for(int c = 0; c < cols; c++)
+                {
+                    rowWord += grids[r, c];
+                }
+                CheckWord(rowWord);
+            }
+
+        }
+
+        private static void CheckWord(string word)
+        {
+          string[] words = word.Split(new char[] {' '} , StringSplitOptions.RemoveEmptyEntries);
+
+            foreach(var w in words)
+            {
+                if(isAnimal(w))
+                {
+                    Console.WriteLine("correct");
+                }
+                else
+                {
+                    Console.WriteLine("incorrect");
+                }
+            }
+
         }
 
     }

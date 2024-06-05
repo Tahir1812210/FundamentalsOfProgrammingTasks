@@ -489,23 +489,33 @@ class Program
         //    Console.WriteLine("Invalid Entered");
         //}
 
-        Console.Write("Enter Name: ");
+        //Console.Write("Enter Name: ");
 
-        string input1 = Console.ReadLine();
+        //string input1 = Console.ReadLine();
 
-        if (string.IsNullOrEmpty(input1))
+        //if (string.IsNullOrEmpty(input1))
+        //{
+        //    Console.WriteLine("Null or Exception Value");
+        //}
+        //else if (int.TryParse(input1, out _) || double.TryParse(input1, out _))
+        //{
+        //    Console.WriteLine("Invalid Entered");
+        //}
+        //else
+        //{
+
+        //    QoutationAfterEveryName.Add(input1);
+        //}
+
+        char[,] grid =
         {
-            Console.WriteLine("Null or Exception Value");
-        }
-        else if (int.TryParse(input1, out _) || double.TryParse(input1, out _))
-        {
-            Console.WriteLine("Invalid Entered");
-        }
-        else
-        {
-            
-            QoutationAfterEveryName.Add(input1);
-        }
+             { 'c', 'a', 't', 'x' },    
+                { 'd', 'o', 'g', 'y' },    
+                { 'e', 'l', 'e', 'p' },    
+                { 'h', 'a', 'n', 't' }     
+        };
+
+        CrossWordAnimalChallenge.FindAnimals(grid);
 
     }
 }
